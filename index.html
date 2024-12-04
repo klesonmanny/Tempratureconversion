@@ -1,0 +1,32 @@
+<!DOCTYPE textboxhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Conversion App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle-switch">
+        <label class="switch-label">
+            <input type="checkbox" class="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <p id="themeText">Light Mode</p>
+    </div>
+    <div class="form">    
+        <h1>Temperature Converter</h1>
+    <input type="number" id="textbox">
+    <div>
+            <input type="radio" id="toFahrenheit" name="unit"> 
+             <label for="toFahrenheit">Convert 🔜 Fahrenheit</label><br>
+       
+            <input type="radio" id="toCelsius" name="unit">
+            <label> Convert 🔜 Celsius</label>
+    </div>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
